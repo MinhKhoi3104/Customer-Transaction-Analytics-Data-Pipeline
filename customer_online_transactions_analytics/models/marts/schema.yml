@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: customer_online_transaction
+    description: raw data is cleared, just log customer transaction data
+    columns:
+      - name: Invoice
+        description: Invoice number 
+        tests:
+          - not_null
+      - name: StockCode
+        description: Product code 
+        tests:
+          - not_null
+    tests:
+      - unique:
+          column_name: "(Invoice || '-' || StockCode)"

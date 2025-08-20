@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: main
+    description: Raw customer online transaction data
+    schema: data_study
+    tables:
+      - name: transaction_data
+        description: "Log information about the customer transaction: number, quantity, price, used's voucher"
+        columns:
+          - name: order_id
+            description: Primary key
+            tests:
+              - unique
+              - not_null
+
+models:
+  - name: stg_transaction_data
+    description: Staged transaction data with basic transformations
+    columns:
+      - name: txn_time
+        description: order datetime
+        tests:
+          - not_null
+      - name: txn_date
+        description: order datetime 
+        tests:
+          - not_null
+      - name: order_id 
+        description: Primary key
+        test: 
+          - unique
+          - not_null
+      - name: uid
+        description: userid
+        tests:
+          - not_null
+      - name: shop_id
+        description: shop id
+        tests:
+          - not_null
+      - name: shop_owner_uid
+        description: shop_owner_uid
+        tests:
+          - not_null
+      - name: gmv
+        description: total price of order
+        tests:
+          - not_null
+          - positive_quantity
+      - name: rebate
+        description: the amount of discount price
+        tests:
+          - not_null
