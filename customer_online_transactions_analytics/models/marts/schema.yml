@@ -54,3 +54,24 @@ models:
         description: the id of shop owner (a person can own more than 1 shop)
         tests:
           - not_null
+
+  - name: suspected_fraud_customer
+    description: 'suspected fraud customers is defined: buying under-1000 orders, use more than 1 voucher per day'
+    column:
+      - name: uid
+        description: the userid
+        tests:
+          - not_null
+
+  - name: suspected_fraud_shop
+    description: 'suspected fraud shop is defined: having under-1000 orders (fake orders hay order boosting)'
+    column:
+      - name: shop_id
+        description: the id of shop (unique)
+        tests: 
+          - not_null
+      - name: shop_owner_uid
+        description: the id of shop owner (a person can own more than 1 shop)
+        tests:
+          - not_null
+
