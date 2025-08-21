@@ -1,17 +1,56 @@
 version: 2
 
 models:
-  - name: customer_online_transaction
-    description: raw data is cleared, just log customer transaction data
-    columns:
-      - name: Invoice
-        description: Invoice number 
+  - name: sale_analysis_by_shop_daily
+    description: total of orders, price, rebate per day
+    column:
+      - name: txn_date
+        description: transaction date
         tests:
           - not_null
-      - name: StockCode
-        description: Product code 
+      - name: shop_id
+        descriptions: the id of shop (unique)
         tests:
           - not_null
-    tests:
-      - unique:
-          column_name: "(Invoice || '-' || StockCode)"
+      - name: shop_owner_uid
+        description: the id of shop owner (a person can own more than 1 shop)
+        tests:
+          - not_null
+
+  - name: dim_shop_owner
+    description: dim table about shop and shop owner
+    column:
+      - name: shop_id
+        description: the id of shop (unique)
+        tests: 
+          - not_null
+      - name: shop_owner_uid
+        description: the id of shop owner (a person can own more than 1 shop)
+        tests:
+          - not_null
+
+  - name: customer_pending_rank
+    description: ranking customers by their pending
+    column:
+      - name: uid 
+        description: unique
+        tests:
+          - not_null
+          - unique
+      - name: total_pending
+        description: total_pending
+        tests:
+          - not_null
+          - positive_quantity
+
+  - name: shop_selling_rank
+    description: ranking shop by their selling (total order and total gmv)
+    column:
+      - name: shop_id
+        description: the id of shop (unique)
+        tests: 
+          - not_null
+      - name: shop_owner_uid
+        description: the id of shop owner (a person can own more than 1 shop)
+        tests:
+          - not_null
