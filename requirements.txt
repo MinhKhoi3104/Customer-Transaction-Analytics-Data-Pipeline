@@ -1,0 +1,6 @@
+dbt-core==1.7.13
+dbt-mysql==1.7.0
+fastapi==0.115.12
+uvicorn==0.34.3
+nltk==3.9.1
+requests==2.31.0
