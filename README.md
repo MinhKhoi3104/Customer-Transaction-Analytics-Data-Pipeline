@@ -48,7 +48,7 @@ conda activate demo-01
 ```bash
 pip install -r requirements.txt
 ```
-4. Update the dbt profile configuration and then run the following commands:
+4. Open a new terminal, update the dbt profile configuration, and then run the following commands:
 ```bash
 cd ~/.dbt/ && code .
 ```
@@ -56,9 +56,8 @@ cd ~/.dbt/ && code .
 
 ![update-dbt-profile](./image/update-dbt-profile.png)
 
-- Run the following commands:
+- Return to the original terminal and run the following commands:
 ```bash
-### The previous command changed the working directory, so please navigate back to the current project folder or open a new terminal.
 cd customer_online_transactions_analytics ### Navigate to the folder where dbt is running.
 dbt run
 ```
@@ -77,9 +76,8 @@ dbt docs serve;
 
 ![lineage-graph](./image/lineage-graph.png)
 
-- Next, run the commands to start FastAPI.
+- Next, run the commands to start FastAPI. You can open a separate terminal to enter the command or click "Ctrl + C" to continue this terminal. However, If you countinue to use this terminal, you must enter the command "cd .." before entering the below command
 ```bash
-### You can open a separate terminal to enter the command.
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 ![api-success](./image/api-success.png)
