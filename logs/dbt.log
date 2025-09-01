@@ -1584,3 +1584,18 @@ drop table if exists `data_study`.`shop_selling_rank__dbt_backup`
 [0m15:20:39.306324 [debug] [MainThread]: Command `dbt run` succeeded at 15:20:39.305967 after 1.61 seconds
 [0m15:20:39.307001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8fd2e1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c495e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c497460>]}
 [0m15:20:39.308398 [debug] [MainThread]: Flushing usage events
+[0m20:56:52.674445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e2e1e260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e0c07520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e0c074c0>]}
+
+
+============================== 20:56:52.676543 | 59824347-ae73-4ac2-9360-2d9166c3e8a1 ==============================
+[0m20:56:52.676543 [info ] [MainThread]: Running with dbt=1.7.13
+[0m20:56:52.677098 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/minh/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:56:52.677667 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:56:52.678368 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.040168557, "process_user_time": 1.660201, "process_kernel_time": 0.067844, "process_mem_max_rss": "93596", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m20:56:52.678831 [debug] [MainThread]: Command `dbt run` failed at 20:56:52.678683 after 0.04 seconds
+[0m20:56:52.679214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e2e1e260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e0c075b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e0c074f0>]}
+[0m20:56:52.679639 [debug] [MainThread]: Flushing usage events

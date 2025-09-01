@@ -1,4 +1,4 @@
-{% macro positive_quantity(model, column_name) %}
+{% macro test_positive_quantity(model, column_name) %}
 
 select *
 from {{ model }}

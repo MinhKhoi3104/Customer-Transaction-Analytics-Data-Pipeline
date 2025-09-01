@@ -1,35 +1,8 @@
-from fastapi import FastAPI, HTTPException, status, Depends
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from pydantic import BaseModel
-from typing import Optional
-import mysql.connector
-from datetime import date
-from logger import logger
+from fastapi import FastAPI, Depends, HTTPException
+from mysql_connection import get_db_connection
+from api_authentication import verify_credentials
 
 app = FastAPI()
-security = HTTPBasic()
-
-def get_db_connection():
-    conn = mysql.connector.connect(
-        host="localhost",        
-        user="admin",            
-        password="",
-        database="data_study"    
-    )
-    return conn
-
-
-### create admin account
-def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
-    if credentials.username != "admin" or credentials.password != "admin":
-        logger.error("Invalid login attempt: %s", credentials.username)
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid username or password",
-            headers={"WWW-Authenticate": "Basic"},
-        )
-    return credentials.username
-
 
 ### show campaign summary metrics
 @app.get("/campaign_summary")

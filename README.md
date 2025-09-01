@@ -33,3 +33,44 @@ After gathering the campaign transaction data, the following steps were implemen
 - Used **Docker** to containerize the API, ensuring stable and consistent deployment across environments while simplifying setup and scalability.
   
 ## Detailed Project Demo Guide
+
+1. Đầu tiên, tải code trên Github này về  máy. Sau đó, set up 1 MySQL database version 8.0 (localhost port 3306). Sau đó tạo database mang tên data_study và import file transaction_data.csv trong folder data_sample vào.
+
+![importdata](./image/importdata.png)
+
+2. Sau đó, tạo 1 env mới để chuẩn bị cho demo. Lưu ý demo sẽ hướng dẫn trên môi trường ubuntu và sử dụng anaconda (nếu khác môi trường hoặc hệ điều hành mọi người có thể tra cứu thêm để chuyển đổi câu lệnh tương ứng)
+
+```bash
+conda create --name demo-01 python=3.10 -y
+conda activate demo-01
+```
+3. Sau đó, import các thư viện cần thiết
+```bash
+pip install -r requirements.txt
+```
+4. Thực hiện thay đổi file dbt profile và thực hiện các câu lệnh sau như sau:
+```bash
+cd ~/.dbt/ && code .
+```
+- Thay đổi file như sau:
+
+![update-dbt-profile](./image/update-dbt-profile.png)
+
+- Thực hiện các câu lệnh:
+```bash
+### câu lệnh phía trước cd sang folder khác nên hãy cd về folder hiện tại chứa code hoặc tạo 1 terminal mới
+cd customer_online_transactions_analytics ### cd đến folder dbt đang chạy
+dbt run
+```
+- Nếu kết quả chạy ra như hình là thành công và ta sẽ thấy các tbl mới được tạo ở MySQL
+
+![dbt-success](./image/dbt-success.png)
+
+![new-tbl](./image/new-tbl.png)
+
+- Tiếp tục thực hiện các câu lệnh
+```bash
+dbt docs generate;
+dbt docs serve;
+```
+
