@@ -9,7 +9,7 @@
 A data pipeline for e-commerce transactions, built with **Python**, **DBT**, **MySQL**, **FastAPI**, and **Docker** to transform raw campaign data into business insights and fraud detection reports.
 ## Introduction of the Project and Overview of the Implementation Steps
 ### 📌 Introduction:
-This project is a Customer Transaction Analytics Platform designed to process and analyze e-commerce campaign data. The system transforms raw transaction logs into structured insights, such as customer spending, shop performance, and fraud detection. It also provides APIs for different stakeholders (customers, shop owners, and the marketing team) to access business metrics in real time.
+This project is a Customer Transaction Analytics Data Pipeline designed to process and analyze e-commerce campaign data. The system transforms raw transaction logs into structured insights, such as customer spending, shop performance, and fraud detection. It also provides APIs for different stakeholders (customers, shop owners, and the marketing team) to access business metrics in real time.
 
 ![overview](./image/overview.png)
 
@@ -34,43 +34,78 @@ After gathering the campaign transaction data, the following steps were implemen
   
 ## Detailed Project Demo Guide
 
-1. Đầu tiên, tải code trên Github này về  máy. Sau đó, set up 1 MySQL database version 8.0 (localhost port 3306). Sau đó tạo database mang tên data_study và import file transaction_data.csv trong folder data_sample vào.
+1. First, clone this repository from GitHub to your local machine. Then, set up a MySQL database (version 8.0) running on localhost:3306. Next, create a database named data_study and import the transaction_data.csv file from the data_sample folder into it.
 
 ![importdata](./image/importdata.png)
 
-2. Sau đó, tạo 1 env mới để chuẩn bị cho demo. Lưu ý demo sẽ hướng dẫn trên môi trường ubuntu và sử dụng anaconda (nếu khác môi trường hoặc hệ điều hành mọi người có thể tra cứu thêm để chuyển đổi câu lệnh tương ứng)
+2. Next, create a new virtual environment to prepare for the demo. Note that the demo will be conducted on an ***Ubuntu environment using Anaconda***. If you are working on a different operating system or environment, please adapt the commands accordingly.
 
 ```bash
 conda create --name demo-01 python=3.10 -y
 conda activate demo-01
 ```
-3. Sau đó, import các thư viện cần thiết
+3. Then, import the required libraries.
 ```bash
 pip install -r requirements.txt
 ```
-4. Thực hiện thay đổi file dbt profile và thực hiện các câu lệnh sau như sau:
+4. Update the dbt profile configuration and then run the following commands:
 ```bash
 cd ~/.dbt/ && code .
 ```
-- Thay đổi file như sau:
+- Modify the file as follows:
 
 ![update-dbt-profile](./image/update-dbt-profile.png)
 
-- Thực hiện các câu lệnh:
+- Run the following commands:
 ```bash
-### câu lệnh phía trước cd sang folder khác nên hãy cd về folder hiện tại chứa code hoặc tạo 1 terminal mới
-cd customer_online_transactions_analytics ### cd đến folder dbt đang chạy
+### The previous command changed the working directory, so please navigate back to the current project folder or open a new terminal.
+cd customer_online_transactions_analytics ### Navigate to the folder where dbt is running.
 dbt run
 ```
-- Nếu kết quả chạy ra như hình là thành công và ta sẽ thấy các tbl mới được tạo ở MySQL
+- If the output matches the example image, the execution was successful and you will see the newly created tables in MySQL.
 
 ![dbt-success](./image/dbt-success.png)
 
 ![new-tbl](./image/new-tbl.png)
 
-- Tiếp tục thực hiện các câu lệnh
+- Continue by running the commands to open the DBT docs, where you can review the logic used to create the tables.
 ```bash
 dbt docs generate;
 dbt docs serve;
 ```
+![dbt-docs](./image/dbt-docs.png)
 
+![lineage-graph](./image/lineage-graph.png)
+
+- Next, run the commands to start FastAPI.
+```bash
+### You can open a separate terminal to enter the command.
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+![api-success](./image/api-success.png)
+
+- Copy the URL and paste it into your browser, then append /docs (e.g., http://0.0.0.0:8000/docs).
+
+![api-docs](./image/api-docs.png)
+
+- Click 'Try it out' and fill in the input to perform the search (for cases requiring login, use username = admin and password = admin).
+
+![api-demo-01](./image/api-demo-01.png)
+
+![api-demo-02](./image/api-demo-02.png)
+
+- Note: Viewing the campaign summary is restricted to internal use (Marcom department), so a username and password are required. Any unauthorized login attempts with incorrect credentials will be logged in the file o_transaction_analytics_api.log
+
+![api_authen](./image/api_authen.png)
+
+![log_user_notpass](./image/log_user_notpass.png)
+
+- All accesses to the API will be notified and logged.
+
+![api-log-access](./image/api-log-access.png)
+
+- Additionally, we can use Postman as an alternative to accessing the link http://0.0.0.0:8000/docs
+
+![postman](./image/postman.png)
+
+## ***Author: Nguyen Minh Khoi***
