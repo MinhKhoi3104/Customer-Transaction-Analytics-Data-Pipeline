@@ -1,0 +1,1586 @@
+[0m00:21:27.572395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7752a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7530f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7530f3a0>]}
+
+
+============================== 00:21:27.574881 | c2e3fdf6-776e-4497-ae3f-966888094764 ==============================
+[0m00:21:27.574881 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:21:27.575634 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/minh/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init customer_online_transactions_analytics', 'send_anonymous_usage_stats': 'True'}
+[0m00:21:27.576490 [debug] [MainThread]: Starter project path: /home/minh/anaconda3/envs/cota_dbt/lib/python3.10/site-packages/dbt/include/starter_project
+[0m00:21:27.578376 [info ] [MainThread]: 
+Your new dbt project "customer_online_transactions_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:21:27.578918 [info ] [MainThread]: Setting up your profile.
+[0m00:21:35.863914 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 8.334018, "process_user_time": 2.050943, "process_kernel_time": 0.09595, "process_mem_max_rss": "98788", "process_in_blocks": "4160", "process_out_blocks": "72"}
+[0m00:21:35.864717 [debug] [MainThread]: Command `dbt init` succeeded at 00:21:35.864383 after 8.33 seconds
+[0m00:21:35.865336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7752a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7530f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf7530f580>]}
+[0m00:21:35.865839 [debug] [MainThread]: Flushing usage events
+[0m00:31:36.616665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad291e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad0703400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad07033a0>]}
+
+
+============================== 00:31:36.619235 | 009416be-bee3-42b1-9dbb-8be2b6575182 ==============================
+[0m00:31:36.619235 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:31:36.620200 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/minh/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:31:36.620933 [info ] [MainThread]: dbt version: 1.7.13
+[0m00:31:36.621584 [info ] [MainThread]: python version: 3.10.0
+[0m00:31:36.622252 [info ] [MainThread]: python path: /home/minh/anaconda3/envs/cota_dbt/bin/python3.10
+[0m00:31:36.622673 [info ] [MainThread]: os info: Linux-5.19.0-32-generic-x86_64-with-glibc2.35
+[0m00:31:36.627579 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.sqlite'
+[0m00:31:36.853971 [info ] [MainThread]: Using profiles dir at /home/minh/.dbt
+[0m00:31:36.857202 [info ] [MainThread]: Using profiles.yml file at /home/minh/.dbt/profiles.yml
+[0m00:31:36.858600 [info ] [MainThread]: Using dbt_project.yml file at /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+[0m00:31:36.860085 [info ] [MainThread]: Configuration:
+[0m00:31:36.861734 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:31:36.863207 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:31:36.864879 [info ] [MainThread]: Required dependencies:
+[0m00:31:36.866720 [debug] [MainThread]: Executing "git --help"
+[0m00:31:36.875435 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:31:36.877549 [debug] [MainThread]: STDERR: "b''"
+[0m00:31:36.879417 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:31:36.881137 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:31:36.882036 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:31:36.883089 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "employees_analytics", target "dev" invalid: Runtime Error
+    Could not find adapter type sqlite!
+
+
+[0m00:31:36.883878 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml> not found
+
+[0m00:31:36.885980 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.30944252, "process_user_time": 2.194841, "process_kernel_time": 0.083955, "process_mem_max_rss": "99636", "process_in_blocks": "112", "process_out_blocks": "24", "command_success": false}
+[0m00:31:36.887709 [debug] [MainThread]: Command `dbt debug` failed at 00:31:36.887306 after 0.31 seconds
+[0m00:31:36.888948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad291e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad0703550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3ad069be80>]}
+[0m00:31:36.890138 [debug] [MainThread]: Flushing usage events
+[0m00:31:45.487684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7141122350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713ef07490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713ef07430>]}
+
+
+============================== 00:31:45.490145 | 795b4a02-a229-4f93-a6c0-8512de21112b ==============================
+[0m00:31:45.490145 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:31:45.491000 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/minh/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:31:45.491603 [info ] [MainThread]: dbt version: 1.7.13
+[0m00:31:45.492252 [info ] [MainThread]: python version: 3.10.0
+[0m00:31:45.492817 [info ] [MainThread]: python path: /home/minh/anaconda3/envs/cota_dbt/bin/python3.10
+[0m00:31:45.493567 [info ] [MainThread]: os info: Linux-5.19.0-32-generic-x86_64-with-glibc2.35
+[0m00:31:45.498543 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.sqlite'
+[0m00:31:45.714346 [info ] [MainThread]: Using profiles dir at /home/minh/.dbt
+[0m00:31:45.716430 [info ] [MainThread]: Using profiles.yml file at /home/minh/.dbt/profiles.yml
+[0m00:31:45.717433 [info ] [MainThread]: Using dbt_project.yml file at /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+[0m00:31:45.718243 [info ] [MainThread]: Configuration:
+[0m00:31:45.719033 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:31:45.719746 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:31:45.720448 [info ] [MainThread]: Required dependencies:
+[0m00:31:45.721464 [debug] [MainThread]: Executing "git --help"
+[0m00:31:45.726536 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:31:45.728189 [debug] [MainThread]: STDERR: "b''"
+[0m00:31:45.728994 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:31:45.729902 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:31:45.730875 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:31:45.731664 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "employees_analytics", target "dev" invalid: Runtime Error
+    Could not find adapter type sqlite!
+
+
+[0m00:31:45.732668 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml> not found
+
+[0m00:31:45.735738 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.28831753, "process_user_time": 2.265136, "process_kernel_time": 0.06003, "process_mem_max_rss": "99584", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:31:45.738198 [debug] [MainThread]: Command `dbt debug` failed at 00:31:45.737697 after 0.29 seconds
+[0m00:31:45.738984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7141122350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713ef07700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713ee9af80>]}
+[0m00:31:45.740492 [debug] [MainThread]: Flushing usage events
+[0m00:34:09.667827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b55163b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b33034f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b3303490>]}
+
+
+============================== 00:34:09.670437 | 3b633c84-ea59-4510-89ea-88a6ae327486 ==============================
+[0m00:34:09.670437 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:34:09.671350 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/minh/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:34:09.672060 [info ] [MainThread]: dbt version: 1.7.13
+[0m00:34:09.672714 [info ] [MainThread]: python version: 3.10.0
+[0m00:34:09.673345 [info ] [MainThread]: python path: /home/minh/anaconda3/envs/cota_dbt/bin/python3.10
+[0m00:34:09.673716 [info ] [MainThread]: os info: Linux-5.19.0-32-generic-x86_64-with-glibc2.35
+[0m00:34:09.679042 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.sqlite'
+[0m00:34:09.818730 [info ] [MainThread]: Using profiles dir at /home/minh/.dbt
+[0m00:34:09.819457 [info ] [MainThread]: Using profiles.yml file at /home/minh/.dbt/profiles.yml
+[0m00:34:09.820069 [info ] [MainThread]: Using dbt_project.yml file at /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+[0m00:34:09.820527 [info ] [MainThread]: Configuration:
+[0m00:34:09.821034 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:34:09.821491 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:34:09.821928 [info ] [MainThread]: Required dependencies:
+[0m00:34:09.822393 [debug] [MainThread]: Executing "git --help"
+[0m00:34:09.824045 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:34:09.824560 [debug] [MainThread]: STDERR: "b''"
+[0m00:34:09.825282 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:34:09.826017 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:34:09.826658 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:34:09.827315 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "employees_analytics", target "dev" invalid: Runtime Error
+    Could not find adapter type sqlite!
+
+
+[0m00:34:09.827903 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml> not found
+
+[0m00:34:09.828911 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.20789126, "process_user_time": 2.248749, "process_kernel_time": 0.084028, "process_mem_max_rss": "99560", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m00:34:09.829502 [debug] [MainThread]: Command `dbt debug` failed at 00:34:09.829310 after 0.21 seconds
+[0m00:34:09.830026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b55163b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b3303760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe4b32968c0>]}
+[0m00:34:09.830612 [debug] [MainThread]: Flushing usage events
+[0m00:35:40.869471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c9922380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c72e34f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c72e3490>]}
+
+
+============================== 00:35:40.872152 | a0f49094-22a5-4667-85fe-f5649b378505 ==============================
+[0m00:35:40.872152 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:35:40.872953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/minh/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:35:40.873535 [info ] [MainThread]: dbt version: 1.7.13
+[0m00:35:40.874051 [info ] [MainThread]: python version: 3.10.0
+[0m00:35:40.874603 [info ] [MainThread]: python path: /home/minh/anaconda3/envs/cota_dbt/bin/python3.10
+[0m00:35:40.875129 [info ] [MainThread]: os info: Linux-5.19.0-32-generic-x86_64-with-glibc2.35
+[0m00:35:40.881052 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.sqlite'
+[0m00:35:41.032382 [info ] [MainThread]: Using profiles dir at /home/minh/.dbt
+[0m00:35:41.033182 [info ] [MainThread]: Using profiles.yml file at /home/minh/.dbt/profiles.yml
+[0m00:35:41.033773 [info ] [MainThread]: Using dbt_project.yml file at /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+[0m00:35:41.034426 [info ] [MainThread]: Configuration:
+[0m00:35:41.035047 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:35:41.035653 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:35:41.036187 [info ] [MainThread]: Required dependencies:
+[0m00:35:41.036842 [debug] [MainThread]: Executing "git --help"
+[0m00:35:41.039251 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:35:41.040163 [debug] [MainThread]: STDERR: "b''"
+[0m00:35:41.040880 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:35:41.041538 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:35:41.042204 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:35:41.042852 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "employees_analytics", target "dev" invalid: Runtime Error
+    Could not find adapter type sqlite!
+
+
+[0m00:35:41.043630 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml> not found
+
+[0m00:35:41.044915 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.21815354, "process_user_time": 2.224475, "process_kernel_time": 0.068014, "process_mem_max_rss": "99708", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:35:41.045986 [debug] [MainThread]: Command `dbt debug` failed at 00:35:41.045654 after 0.22 seconds
+[0m00:35:41.047910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c9922380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c72e3760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92c7277970>]}
+[0m00:35:41.049940 [debug] [MainThread]: Flushing usage events
+[0m00:37:01.380164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fc826380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fa6134f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fa613490>]}
+
+
+============================== 00:37:01.382868 | ee4fa9b6-ab67-4119-8d5a-b2ffa2d50b09 ==============================
+[0m00:37:01.382868 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:37:01.383573 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/minh/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:37:01.384177 [info ] [MainThread]: dbt version: 1.7.13
+[0m00:37:01.384675 [info ] [MainThread]: python version: 3.10.0
+[0m00:37:01.385154 [info ] [MainThread]: python path: /home/minh/anaconda3/envs/cota_dbt/bin/python3.10
+[0m00:37:01.385603 [info ] [MainThread]: os info: Linux-5.19.0-32-generic-x86_64-with-glibc2.35
+[0m00:37:01.513078 [info ] [MainThread]: Using profiles dir at /home/minh/.dbt
+[0m00:37:01.513739 [info ] [MainThread]: Using profiles.yml file at /home/minh/.dbt/profiles.yml
+[0m00:37:01.514366 [info ] [MainThread]: Using dbt_project.yml file at /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+[0m00:37:01.515010 [info ] [MainThread]: adapter type: mysql
+[0m00:37:01.515583 [info ] [MainThread]: adapter version: 1.7.0
+[0m00:37:01.516354 [info ] [MainThread]: Configuration:
+[0m00:37:01.517200 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:37:01.517853 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:37:01.518388 [info ] [MainThread]: Required dependencies:
+[0m00:37:01.519375 [debug] [MainThread]: Executing "git --help"
+[0m00:37:01.521211 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:37:01.521673 [debug] [MainThread]: STDERR: "b''"
+[0m00:37:01.522052 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:37:01.522514 [info ] [MainThread]: Connection:
+[0m00:37:01.523093 [info ] [MainThread]:   server: localhost
+[0m00:37:01.523834 [info ] [MainThread]:   unix_socket: None
+[0m00:37:01.524309 [info ] [MainThread]:   port: 3306
+[0m00:37:01.524987 [info ] [MainThread]:   database: None
+[0m00:37:01.525652 [info ] [MainThread]:   schema: data_study
+[0m00:37:01.526332 [info ] [MainThread]:   user: admin
+[0m00:37:01.527119 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m00:37:01.528032 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m00:37:01.528742 [debug] [MainThread]: Using mysql connection "debug"
+[0m00:37:01.529371 [debug] [MainThread]: On debug: select 1 as id
+[0m00:37:01.530122 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:37:01.563999 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m00:37:01.566379 [debug] [MainThread]: On debug: Close
+[0m00:37:01.568801 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:37:01.570592 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:37:01.571666 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml> not found
+
+[0m00:37:01.573804 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.2346555, "process_user_time": 2.247182, "process_kernel_time": 0.067975, "process_mem_max_rss": "104580", "process_in_blocks": "32", "process_out_blocks": "32", "command_success": false}
+[0m00:37:01.575849 [debug] [MainThread]: Command `dbt debug` failed at 00:37:01.575263 after 0.24 seconds
+[0m00:37:01.577755 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:37:01.578963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fc826380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fa5a7850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7fa3dbcd0>]}
+[0m00:37:01.580170 [debug] [MainThread]: Flushing usage events
+[0m15:17:20.861528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd411e230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd1f074f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd1f07490>]}
+
+
+============================== 15:17:20.864500 | 35a28def-f882-49a8-af96-f8e703ded0d8 ==============================
+[0m15:17:20.864500 [info ] [MainThread]: Running with dbt=1.7.13
+[0m15:17:20.865144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/minh/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select customer_online_transaction.sql', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:17:20.865646 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/minh/khoidata/GitHub/customer_online_transactions_analytics/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:17:20.866668 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.05264655, "process_user_time": 1.780236, "process_kernel_time": 0.100013, "process_mem_max_rss": "93304", "process_in_blocks": "77592", "process_out_blocks": "8", "command_success": false}
+[0m15:17:20.867208 [debug] [MainThread]: Command `dbt run` failed at 15:17:20.867037 after 0.05 seconds
+[0m15:17:20.867601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd411e230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd1f07580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cd1f074c0>]}
+[0m15:17:20.868003 [debug] [MainThread]: Flushing usage events
+[0m15:08:28.354364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f34a022c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f327e33a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f327e3340>]}
+
+
+============================== 15:08:28.357803 | a74fcba0-fad3-4069-b66a-ac56939284e5 ==============================
+[0m15:08:28.357803 [info ] [MainThread]: Running with dbt=1.7.13
+[0m15:08:28.358590 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/minh/.dbt', 'log_path': '/home/minh/khoidata/GitHub/customer_online_transactions_analytics/customer_online_transactions_analytics/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:08:28.513412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a74fcba0-fad3-4069-b66a-ac56939284e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f32874a60>]}
+[0m15:08:28.545120 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.23677668, "process_user_time": 3.559643, "process_kernel_time": 0.13169, "process_mem_max_rss": "94864", "process_in_blocks": "544", "process_out_blocks": "8"}
+[0m15:08:28.547567 [debug] [MainThread]: Command `dbt clean` succeeded at 15:08:28.547070 after 0.24 seconds
+[0m15:08:28.549151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f34a022c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f36f07b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f327c59c0>]}
+[0m15:08:28.550827 [debug] [MainThread]: Flushing usage events
+[0m15:08:39.464534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af67ee260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af43cf4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af43cf490>]}
+
+
+============================== 15:08:39.467255 | db7d9894-f024-43c4-a18e-44e74341deb6 ==============================
+[0m15:08:39.467255 [info ] [MainThread]: Running with dbt=1.7.13
+[0m15:08:39.467899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/minh/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/minh/khoidata/GitHub/customer_online_transactions_analytics/customer_online_transactions_analytics/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:08:39.738897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af43cf5e0>]}
+[0m15:08:39.862191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af4583f70>]}
+[0m15:08:39.863278 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:08:39.873217 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m15:08:39.874359 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:08:39.875132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af3989ab0>]}
+[0m15:08:41.325518 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'suspected_fraud_customer' in the 'models' section of file 'models/marts/schema.yml'
+[0m15:08:41.455887 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customer_online_transactions_analytics.example
+[0m15:08:41.469347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af132c0d0>]}
+[0m15:08:41.497780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af3989c60>]}
+[0m15:08:41.500162 [info ] [MainThread]: Found 7 models, 10 tests, 1 source, 0 exposures, 0 metrics, 377 macros, 0 groups, 0 semantic models
+[0m15:08:41.501117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af39896f0>]}
+[0m15:08:41.506560 [info ] [MainThread]: 
+[0m15:08:41.510345 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m15:08:41.517132 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m15:08:41.545672 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m15:08:41.547489 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m15:08:41.550498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:41.587774 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m15:08:41.598519 [debug] [ThreadPool]: On list_schemas: Close
+[0m15:08:41.612231 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_data_study)
+[0m15:08:41.635933 [debug] [ThreadPool]: Using mysql connection "list_None_data_study"
+[0m15:08:41.637143 [debug] [ThreadPool]: On list_None_data_study: BEGIN
+[0m15:08:41.638177 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:08:41.648815 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.651017 [debug] [ThreadPool]: Using mysql connection "list_None_data_study"
+[0m15:08:41.652322 [debug] [ThreadPool]: On list_None_data_study: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "connection_name": "list_None_data_study"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'data_study'
+  
+[0m15:08:41.660179 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.0 seconds
+[0m15:08:41.664829 [debug] [ThreadPool]: On list_None_data_study: ROLLBACK
+[0m15:08:41.666451 [debug] [ThreadPool]: On list_None_data_study: Close
+[0m15:08:41.670994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af1388400>]}
+[0m15:08:41.671930 [debug] [MainThread]: Using mysql connection "master"
+[0m15:08:41.672906 [debug] [MainThread]: On master: BEGIN
+[0m15:08:41.673986 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:41.689215 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.691444 [debug] [MainThread]: On master: COMMIT
+[0m15:08:41.692208 [debug] [MainThread]: Using mysql connection "master"
+[0m15:08:41.692766 [debug] [MainThread]: On master: COMMIT
+[0m15:08:41.694118 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.694715 [debug] [MainThread]: On master: Close
+[0m15:08:41.696903 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:08:41.697704 [info ] [MainThread]: 
+[0m15:08:41.701728 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:08:41.703919 [info ] [Thread-1 (]: 1 of 7 START sql view model data_study.stg_transaction_data .................... [RUN]
+[0m15:08:41.706483 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_data_study, now model.customer_online_transactions_analytics.stg_transaction_data)
+[0m15:08:41.707920 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:08:41.729817 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.732717 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.stg_transaction_data (compile): 15:08:41.708414 => 15:08:41.731604
+[0m15:08:41.734321 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:08:41.831789 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.833859 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.835539 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: BEGIN
+[0m15:08:41.836999 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:41.852536 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.857285 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.861055 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+  create view `data_study`.`stg_transaction_data__dbt_tmp`
+    
+    
+  as (
+    
+
+-- raw data add updated_date
+select
+    txn_time,
+    txn_date,
+    order_id,
+    uid,
+    shop_id,
+    shop_owner_uid,
+    gmv,
+    rebate,
+-- add updated_date
+    NOW() as updated_date
+from `data_study`.`transaction_data`
+  );
+[0m15:08:41.888568 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.906122 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.906922 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    drop view if exists `data_study`.`stg_transaction_data__dbt_backup` cascade
+  
+[0m15:08:41.909191 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.910629 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.911204 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    rename table `data_study`.`stg_transaction_data` to `data_study`.`stg_transaction_data__dbt_backup`
+  
+[0m15:08:41.915135 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.918668 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.919244 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    drop view if exists `data_study`.`stg_transaction_data` cascade
+  
+[0m15:08:41.921609 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.923878 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.924676 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    rename table `data_study`.`stg_transaction_data__dbt_tmp` to `data_study`.`stg_transaction_data`
+  
+[0m15:08:41.928561 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:41.978607 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: COMMIT
+[0m15:08:41.982407 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:41.986432 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: COMMIT
+[0m15:08:41.990398 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.003053 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:08:42.004108 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+drop view if exists `data_study`.`stg_transaction_data__dbt_backup`
+[0m15:08:42.012051 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.015478 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.stg_transaction_data (execute): 15:08:41.735494 => 15:08:42.015139
+[0m15:08:42.016096 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: Close
+[0m15:08:42.017184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af1388910>]}
+[0m15:08:42.018000 [info ] [Thread-1 (]: 1 of 7 OK created sql view model data_study.stg_transaction_data ............... [[32mSUCCESS 0[0m in 0.31s]
+[0m15:08:42.018863 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:08:42.020162 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:08:42.020899 [info ] [Thread-1 (]: 2 of 7 START sql table model data_study.customer_pending_rank .................. [RUN]
+[0m15:08:42.021866 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.stg_transaction_data, now model.customer_online_transactions_analytics.customer_pending_rank)
+[0m15:08:42.022411 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:08:42.026421 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.027221 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.customer_pending_rank (compile): 15:08:42.022757 => 15:08:42.026946
+[0m15:08:42.027695 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:08:42.068573 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.071666 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.072677 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: BEGIN
+[0m15:08:42.073580 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:42.096284 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.098367 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.099405 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+  
+    
+
+  create  table
+    `data_study`.`customer_pending_rank__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- customer pending rank 
+with customer_total_pending as (
+select
+    uid as 'customerID',
+    sum(gmv) as 'total_pending',
+    dense_rank() over (order by sum(gmv) desc) as 'pending_rank'
+from `data_study`.`stg_transaction_data`
+group by customerID )
+-- customer category
+select 
+    customerID,
+    total_pending,
+    pending_rank,
+    
+    case 
+        when pending_rank <= max(pending_rank) over () / 3 then 'Gold'
+        when pending_rank >  max(pending_rank) over () / 3
+         and pending_rank <= max(pending_rank) over () * 2/3 then 'Silver'
+        when pending_rank >  max(pending_rank) over () * 2/3 then 'Bronze'
+        else null
+    end
+ as 'customer_category'
+from customer_total_pending
+    )
+
+  
+[0m15:08:42.164544 [debug] [Thread-1 (]: SQL status: SUCCESS 3093 in 0.0 seconds
+[0m15:08:42.167756 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.168228 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    drop table if exists `data_study`.`customer_pending_rank__dbt_backup` cascade
+  
+[0m15:08:42.170132 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.171240 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.171734 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    rename table `data_study`.`customer_pending_rank` to `data_study`.`customer_pending_rank__dbt_backup`
+  
+[0m15:08:42.181460 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.185737 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.186229 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    drop table if exists `data_study`.`customer_pending_rank` cascade
+  
+[0m15:08:42.188024 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.189092 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.189673 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    rename table `data_study`.`customer_pending_rank__dbt_tmp` to `data_study`.`customer_pending_rank`
+  
+[0m15:08:42.197473 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.202607 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: COMMIT
+[0m15:08:42.203130 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.203579 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: COMMIT
+[0m15:08:42.204405 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.207522 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:08:42.208454 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+drop table if exists `data_study`.`customer_pending_rank__dbt_backup`
+[0m15:08:42.222502 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.224529 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.customer_pending_rank (execute): 15:08:42.027989 => 15:08:42.224235
+[0m15:08:42.225046 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: Close
+[0m15:08:42.226179 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af132f280>]}
+[0m15:08:42.226860 [info ] [Thread-1 (]: 2 of 7 OK created sql table model data_study.customer_pending_rank ............. [[32mSUCCESS 3093[0m in 0.20s]
+[0m15:08:42.227578 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:08:42.228161 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:08:42.229199 [info ] [Thread-1 (]: 3 of 7 START sql table model data_study.dim_shop_owner ......................... [RUN]
+[0m15:08:42.230485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.customer_pending_rank, now model.customer_online_transactions_analytics.dim_shop_owner)
+[0m15:08:42.230979 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:08:42.235466 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.236557 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.dim_shop_owner (compile): 15:08:42.231264 => 15:08:42.236229
+[0m15:08:42.237178 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:08:42.245147 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.246019 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.246531 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: BEGIN
+[0m15:08:42.247169 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:42.256249 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.257894 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.259171 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+  
+    
+
+  create  table
+    `data_study`.`dim_shop_owner__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- dim table about shop and shop_owner
+select
+    shop_id,
+    shop_owner_uid
+from `data_study`.`stg_transaction_data`
+group by shop_id, shop_owner_uid
+    )
+
+  
+[0m15:08:42.312665 [debug] [Thread-1 (]: SQL status: SUCCESS 1385 in 0.0 seconds
+[0m15:08:42.321198 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.323344 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    drop table if exists `data_study`.`dim_shop_owner__dbt_backup` cascade
+  
+[0m15:08:42.327370 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.328637 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.329075 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    rename table `data_study`.`dim_shop_owner` to `data_study`.`dim_shop_owner__dbt_backup`
+  
+[0m15:08:42.337157 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.340313 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.340790 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    drop table if exists `data_study`.`dim_shop_owner` cascade
+  
+[0m15:08:42.343677 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.347514 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.348800 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    rename table `data_study`.`dim_shop_owner__dbt_tmp` to `data_study`.`dim_shop_owner`
+  
+[0m15:08:42.358981 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.361092 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: COMMIT
+[0m15:08:42.361543 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.361965 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: COMMIT
+[0m15:08:42.362705 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.365177 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:08:42.365637 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+drop table if exists `data_study`.`dim_shop_owner__dbt_backup`
+[0m15:08:42.372930 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.374592 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.dim_shop_owner (execute): 15:08:42.237522 => 15:08:42.374341
+[0m15:08:42.375086 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: Close
+[0m15:08:42.376100 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af1388910>]}
+[0m15:08:42.376913 [info ] [Thread-1 (]: 3 of 7 OK created sql table model data_study.dim_shop_owner .................... [[32mSUCCESS 1385[0m in 0.15s]
+[0m15:08:42.378249 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:08:42.379955 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:08:42.381831 [info ] [Thread-1 (]: 4 of 7 START sql table model data_study.sale_analysis_by_shop_daily ............ [RUN]
+[0m15:08:42.384020 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.dim_shop_owner, now model.customer_online_transactions_analytics.sale_analysis_by_shop_daily)
+[0m15:08:42.384905 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:08:42.392499 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.394642 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.sale_analysis_by_shop_daily (compile): 15:08:42.385531 => 15:08:42.393953
+[0m15:08:42.395690 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:08:42.402263 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.403769 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.404361 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: BEGIN
+[0m15:08:42.404895 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:42.414146 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.415247 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.415895 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+  
+    
+
+  create  table
+    `data_study`.`sale_analysis_by_shop_daily__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- transform data, keep customer transaction data, eliminate other cases such as: adjust bad debt, customerID is blank
+select
+    txn_date as 'transaction_date',
+    shop_id,
+    shop_owner_uid,
+    count(order_id) as 'total_order',
+    sum(gmv) as 'total_gmv',
+    sum(case when rebate > 0 then 1 else 0 end) as 'rebate_count',
+    sum(rebate) as 'total_rebate'
+from `data_study`.`stg_transaction_data`
+group by txn_date, shop_id, shop_owner_uid
+    )
+
+  
+[0m15:08:42.487866 [debug] [Thread-1 (]: SQL status: SUCCESS 2289 in 0.0 seconds
+[0m15:08:42.492692 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.493811 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    drop table if exists `data_study`.`sale_analysis_by_shop_daily__dbt_backup` cascade
+  
+[0m15:08:42.499784 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.501342 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.501808 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    rename table `data_study`.`sale_analysis_by_shop_daily` to `data_study`.`sale_analysis_by_shop_daily__dbt_backup`
+  
+[0m15:08:42.509316 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.512404 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.512874 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    drop table if exists `data_study`.`sale_analysis_by_shop_daily` cascade
+  
+[0m15:08:42.514783 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.515905 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.516346 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    rename table `data_study`.`sale_analysis_by_shop_daily__dbt_tmp` to `data_study`.`sale_analysis_by_shop_daily`
+  
+[0m15:08:42.525985 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.528007 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: COMMIT
+[0m15:08:42.528458 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.528879 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: COMMIT
+[0m15:08:42.529591 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.533594 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:08:42.534160 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+drop table if exists `data_study`.`sale_analysis_by_shop_daily__dbt_backup`
+[0m15:08:42.544479 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.546293 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.sale_analysis_by_shop_daily (execute): 15:08:42.396123 => 15:08:42.546037
+[0m15:08:42.546763 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: Close
+[0m15:08:42.547626 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af12dda20>]}
+[0m15:08:42.548261 [info ] [Thread-1 (]: 4 of 7 OK created sql table model data_study.sale_analysis_by_shop_daily ....... [[32mSUCCESS 2289[0m in 0.16s]
+[0m15:08:42.548955 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:08:42.549456 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:08:42.549987 [info ] [Thread-1 (]: 5 of 7 START sql table model data_study.suspected_fraud_customers .............. [RUN]
+[0m15:08:42.551541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.sale_analysis_by_shop_daily, now model.customer_online_transactions_analytics.suspected_fraud_customers)
+[0m15:08:42.552906 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:08:42.696851 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.697583 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_customers (compile): 15:08:42.553554 => 15:08:42.697325
+[0m15:08:42.698016 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:08:42.701947 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.702559 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.703005 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: BEGIN
+[0m15:08:42.703425 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:42.707868 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.708373 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.708844 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+  
+    
+
+  create  table
+    `data_study`.`suspected_fraud_customers__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- suspected fraud customers is defined: buying under-1000 orders, use more than 1 voucher per day
+with define_under_1000_fraud as (
+select 
+    txn_date,
+    uid as 'customer_id',
+    'have_orders_under_1000' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where gmv < 1000
+group by txn_date, uid
+)
+, define_more_than_1_voucher_fraud as (
+select
+    txn_date,
+    uid as 'customer_id',
+    'use_more_than_1_voucher_per_day' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where rebate > 0
+group by txn_date, uid
+having count(rebate) > 1
+)
+-- main (sum up fraud)
+(select * from define_under_1000_fraud)
+union all
+(select * from define_more_than_1_voucher_fraud)
+    )
+
+  
+[0m15:08:42.732538 [debug] [Thread-1 (]: SQL status: SUCCESS 292 in 0.0 seconds
+[0m15:08:42.736346 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.736919 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    drop table if exists `data_study`.`suspected_fraud_customers__dbt_backup` cascade
+  
+[0m15:08:42.739281 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.740724 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.741324 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    rename table `data_study`.`suspected_fraud_customers` to `data_study`.`suspected_fraud_customers__dbt_backup`
+  
+[0m15:08:42.749946 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.754592 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.755088 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    drop table if exists `data_study`.`suspected_fraud_customers` cascade
+  
+[0m15:08:42.757204 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.758409 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.758877 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    rename table `data_study`.`suspected_fraud_customers__dbt_tmp` to `data_study`.`suspected_fraud_customers`
+  
+[0m15:08:42.768339 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.770562 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: COMMIT
+[0m15:08:42.771123 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.771577 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: COMMIT
+[0m15:08:42.772520 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.775691 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:08:42.776684 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+drop table if exists `data_study`.`suspected_fraud_customers__dbt_backup`
+[0m15:08:42.786052 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.788446 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_customers (execute): 15:08:42.698284 => 15:08:42.788049
+[0m15:08:42.789332 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: Close
+[0m15:08:42.790761 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af14d08b0>]}
+[0m15:08:42.791529 [info ] [Thread-1 (]: 5 of 7 OK created sql table model data_study.suspected_fraud_customers ......... [[32mSUCCESS 292[0m in 0.24s]
+[0m15:08:42.792250 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:08:42.792799 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:08:42.793402 [info ] [Thread-1 (]: 6 of 7 START sql table model data_study.suspected_fraud_shop ................... [RUN]
+[0m15:08:42.794923 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.suspected_fraud_customers, now model.customer_online_transactions_analytics.suspected_fraud_shop)
+[0m15:08:42.795790 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:08:42.803832 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.805355 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_shop (compile): 15:08:42.796302 => 15:08:42.804905
+[0m15:08:42.806138 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:08:42.817420 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.819855 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.820731 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: BEGIN
+[0m15:08:42.821212 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:42.835094 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.838915 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.841761 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+  
+    
+
+  create  table
+    `data_study`.`suspected_fraud_shop__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- suspected fraud shop is defined: having under-1000 orders (fake orders hay order boosting)
+select 
+    txn_date,
+    shop_owner_uid,
+    shop_id,
+    'order_boosting' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where gmv < 1000
+group by txn_date, shop_owner_uid,shop_id
+    )
+
+  
+[0m15:08:42.884584 [debug] [Thread-1 (]: SQL status: SUCCESS 101 in 0.0 seconds
+[0m15:08:42.899874 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.901900 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    drop table if exists `data_study`.`suspected_fraud_shop__dbt_backup` cascade
+  
+[0m15:08:42.909009 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.912762 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.913358 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    rename table `data_study`.`suspected_fraud_shop` to `data_study`.`suspected_fraud_shop__dbt_backup`
+  
+[0m15:08:42.924138 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.927494 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.928034 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    drop table if exists `data_study`.`suspected_fraud_shop` cascade
+  
+[0m15:08:42.930272 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.931717 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.932235 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    rename table `data_study`.`suspected_fraud_shop__dbt_tmp` to `data_study`.`suspected_fraud_shop`
+  
+[0m15:08:42.940282 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.942740 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: COMMIT
+[0m15:08:42.943932 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.945749 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: COMMIT
+[0m15:08:42.947771 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.951682 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:08:42.952506 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+drop table if exists `data_study`.`suspected_fraud_shop__dbt_backup`
+[0m15:08:42.959411 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:42.961081 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_shop (execute): 15:08:42.806548 => 15:08:42.960840
+[0m15:08:42.961624 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: Close
+[0m15:08:42.962697 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af145a4a0>]}
+[0m15:08:42.963724 [info ] [Thread-1 (]: 6 of 7 OK created sql table model data_study.suspected_fraud_shop .............. [[32mSUCCESS 101[0m in 0.17s]
+[0m15:08:42.964856 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:08:42.965735 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:08:42.966657 [info ] [Thread-1 (]: 7 of 7 START sql table model data_study.shop_selling_rank ...................... [RUN]
+[0m15:08:42.967955 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.suspected_fraud_shop, now model.customer_online_transactions_analytics.shop_selling_rank)
+[0m15:08:42.968799 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:08:42.974856 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:42.977350 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.shop_selling_rank (compile): 15:08:42.969340 => 15:08:42.976178
+[0m15:08:42.979628 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:08:42.995177 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:42.997853 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:42.998528 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: BEGIN
+[0m15:08:42.999065 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:08:43.008724 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.009843 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.012748 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+  
+    
+
+  create  table
+    `data_study`.`shop_selling_rank__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- rank shop according the number of sold quantity, the gmv total
+with shop_rank as (
+select
+    shop_id,
+    shop_owner_uid,
+    sum(total_order) as 'total_order',
+    dense_rank() over (order by sum(total_order) DESC) as 'orders_rank',
+    sum(total_gmv) as 'total_gmv',
+    dense_rank() over (order by sum(total_gmv) DESC) as 'gmv_rank'
+
+from `data_study`.`sale_analysis_by_shop_daily`
+group by shop_id, shop_owner_uid)
+
+-- shop catogory
+select *,
+    
+    case 
+        when gmv_rank <= max(gmv_rank) over () / 3 then 'Gold'
+        when gmv_rank >  max(gmv_rank) over () / 3
+         and gmv_rank <= max(gmv_rank) over () * 2/3 then 'Silver'
+        when gmv_rank >  max(gmv_rank) over () * 2/3 then 'Bronze'
+        else null
+    end
+ as 'shop_category'
+from shop_rank
+    )
+
+  
+[0m15:08:43.080191 [debug] [Thread-1 (]: SQL status: SUCCESS 1385 in 0.0 seconds
+[0m15:08:43.085664 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.086470 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    drop table if exists `data_study`.`shop_selling_rank__dbt_backup` cascade
+  
+[0m15:08:43.088971 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.090907 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.091766 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    rename table `data_study`.`shop_selling_rank` to `data_study`.`shop_selling_rank__dbt_backup`
+  
+[0m15:08:43.103575 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.107752 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.108698 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    drop table if exists `data_study`.`shop_selling_rank` cascade
+  
+[0m15:08:43.111704 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.114326 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.114887 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    rename table `data_study`.`shop_selling_rank__dbt_tmp` to `data_study`.`shop_selling_rank`
+  
+[0m15:08:43.123737 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.125935 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: COMMIT
+[0m15:08:43.126564 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.127261 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: COMMIT
+[0m15:08:43.128156 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.130998 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:08:43.131515 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+drop table if exists `data_study`.`shop_selling_rank__dbt_backup`
+[0m15:08:43.139385 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.141086 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.shop_selling_rank (execute): 15:08:42.981311 => 15:08:43.140825
+[0m15:08:43.141631 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: Close
+[0m15:08:43.142629 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db7d9894-f024-43c4-a18e-44e74341deb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af16cd120>]}
+[0m15:08:43.143364 [info ] [Thread-1 (]: 7 of 7 OK created sql table model data_study.shop_selling_rank ................. [[32mSUCCESS 1385[0m in 0.18s]
+[0m15:08:43.144144 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:08:43.145820 [debug] [MainThread]: Using mysql connection "master"
+[0m15:08:43.146525 [debug] [MainThread]: On master: BEGIN
+[0m15:08:43.147041 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:08:43.156254 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.157359 [debug] [MainThread]: On master: COMMIT
+[0m15:08:43.158712 [debug] [MainThread]: Using mysql connection "master"
+[0m15:08:43.160826 [debug] [MainThread]: On master: COMMIT
+[0m15:08:43.170770 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:08:43.173524 [debug] [MainThread]: On master: Close
+[0m15:08:43.179840 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:08:43.181563 [debug] [MainThread]: Connection 'model.customer_online_transactions_analytics.shop_selling_rank' was properly closed.
+[0m15:08:43.182095 [info ] [MainThread]: 
+[0m15:08:43.182593 [info ] [MainThread]: Finished running 1 view model, 6 table models in 0 hours 0 minutes and 1.67 seconds (1.67s).
+[0m15:08:43.184394 [debug] [MainThread]: Command end result
+[0m15:08:43.208308 [info ] [MainThread]: 
+[0m15:08:43.209780 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:08:43.211738 [info ] [MainThread]: 
+[0m15:08:43.213472 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m15:08:43.216829 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.802263, "process_user_time": 5.723863, "process_kernel_time": 0.159661, "process_mem_max_rss": "121796", "process_out_blocks": "2680", "process_in_blocks": "0"}
+[0m15:08:43.218546 [debug] [MainThread]: Command `dbt run` succeeded at 15:08:43.218161 after 3.80 seconds
+[0m15:08:43.219550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af67ee260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af165f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5af12bc550>]}
+[0m15:08:43.220679 [debug] [MainThread]: Flushing usage events
+[0m15:20:37.744255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8fd2e1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8db1b400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8db1b3a0>]}
+
+
+============================== 15:20:37.746732 | 280baffd-9ae4-4936-8999-2dbcdc3d7970 ==============================
+[0m15:20:37.746732 [info ] [MainThread]: Running with dbt=1.7.13
+[0m15:20:37.747304 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/minh/khoidata/GitHub/customer_online_transactions_analytics/customer_online_transactions_analytics/logs', 'version_check': 'True', 'profiles_dir': '/home/minh/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:37.967598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8db1b4f0>]}
+[0m15:20:38.053794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8dace9e0>]}
+[0m15:20:38.055105 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:20:38.061972 [debug] [MainThread]: checksum: 6c24e2ee36a42cedd7e5de2827d214776eb7a8e8f425f6d8acb06c31add0afef, vars: {}, profile: , target: , version: 1.7.13
+[0m15:20:38.117693 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:20:38.118187 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:20:38.118991 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.customer_online_transactions_analytics.example
+[0m15:20:38.124236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4e7e50>]}
+[0m15:20:38.133779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4a30a0>]}
+[0m15:20:38.134351 [info ] [MainThread]: Found 7 models, 10 tests, 1 source, 0 exposures, 0 metrics, 377 macros, 0 groups, 0 semantic models
+[0m15:20:38.134792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4a3400>]}
+[0m15:20:38.136480 [info ] [MainThread]: 
+[0m15:20:38.137213 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m15:20:38.138511 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m15:20:38.147705 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m15:20:38.148215 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m15:20:38.148606 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:20:38.213281 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m15:20:38.214657 [debug] [ThreadPool]: On list_schemas: Close
+[0m15:20:38.216564 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_data_study)
+[0m15:20:38.221480 [debug] [ThreadPool]: Using mysql connection "list_None_data_study"
+[0m15:20:38.221914 [debug] [ThreadPool]: On list_None_data_study: BEGIN
+[0m15:20:38.222316 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:20:38.227860 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.228360 [debug] [ThreadPool]: Using mysql connection "list_None_data_study"
+[0m15:20:38.228829 [debug] [ThreadPool]: On list_None_data_study: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "connection_name": "list_None_data_study"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'data_study'
+  
+[0m15:20:38.230789 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.0 seconds
+[0m15:20:38.232439 [debug] [ThreadPool]: On list_None_data_study: ROLLBACK
+[0m15:20:38.233025 [debug] [ThreadPool]: On list_None_data_study: Close
+[0m15:20:38.236308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4a2410>]}
+[0m15:20:38.236929 [debug] [MainThread]: Using mysql connection "master"
+[0m15:20:38.237437 [debug] [MainThread]: On master: BEGIN
+[0m15:20:38.237929 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:20:38.242631 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.243156 [debug] [MainThread]: On master: COMMIT
+[0m15:20:38.243662 [debug] [MainThread]: Using mysql connection "master"
+[0m15:20:38.244159 [debug] [MainThread]: On master: COMMIT
+[0m15:20:38.244877 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.245379 [debug] [MainThread]: On master: Close
+[0m15:20:38.246251 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:20:38.246788 [info ] [MainThread]: 
+[0m15:20:38.249011 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:20:38.249649 [info ] [Thread-1 (]: 1 of 7 START sql view model data_study.stg_transaction_data .................... [RUN]
+[0m15:20:38.250477 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_None_data_study, now model.customer_online_transactions_analytics.stg_transaction_data)
+[0m15:20:38.250999 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:20:38.264136 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.265836 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.stg_transaction_data (compile): 15:20:38.251338 => 15:20:38.265212
+[0m15:20:38.266920 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:20:38.310500 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.311216 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.311624 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: BEGIN
+[0m15:20:38.312002 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:38.317687 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.318126 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.318523 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+  create view `data_study`.`stg_transaction_data__dbt_tmp`
+    
+    
+  as (
+    
+
+-- raw data add updated_date
+select
+    txn_time,
+    txn_date,
+    order_id,
+    uid,
+    shop_id,
+    shop_owner_uid,
+    gmv,
+    rebate,
+-- add updated_date
+    NOW() as updated_date
+from `data_study`.`transaction_data`
+  );
+[0m15:20:38.328589 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.334176 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.334593 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    drop view if exists `data_study`.`stg_transaction_data__dbt_backup` cascade
+  
+[0m15:20:38.336851 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.337756 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.338163 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    rename table `data_study`.`stg_transaction_data` to `data_study`.`stg_transaction_data__dbt_backup`
+  
+[0m15:20:38.342948 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.345493 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.345894 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    drop view if exists `data_study`.`stg_transaction_data` cascade
+  
+[0m15:20:38.347455 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.348340 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.348747 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+
+    rename table `data_study`.`stg_transaction_data__dbt_tmp` to `data_study`.`stg_transaction_data`
+  
+[0m15:20:38.352683 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.366410 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: COMMIT
+[0m15:20:38.366841 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.367277 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: COMMIT
+[0m15:20:38.367855 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.372075 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.stg_transaction_data"
+[0m15:20:38.372480 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.stg_transaction_data"} */
+drop view if exists `data_study`.`stg_transaction_data__dbt_backup`
+[0m15:20:38.378343 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.379698 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.stg_transaction_data (execute): 15:20:38.267408 => 15:20:38.379470
+[0m15:20:38.380118 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.stg_transaction_data: Close
+[0m15:20:38.380844 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4a1c60>]}
+[0m15:20:38.381418 [info ] [Thread-1 (]: 1 of 7 OK created sql view model data_study.stg_transaction_data ............... [[32mSUCCESS 0[0m in 0.13s]
+[0m15:20:38.382011 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.stg_transaction_data
+[0m15:20:38.382935 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:20:38.383471 [info ] [Thread-1 (]: 2 of 7 START sql table model data_study.customer_pending_rank .................. [RUN]
+[0m15:20:38.384075 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.stg_transaction_data, now model.customer_online_transactions_analytics.customer_pending_rank)
+[0m15:20:38.384478 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:20:38.389543 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.390306 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.customer_pending_rank (compile): 15:20:38.384727 => 15:20:38.390008
+[0m15:20:38.390724 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:20:38.488300 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.488944 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.489346 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: BEGIN
+[0m15:20:38.489738 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:38.494405 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.494823 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.495292 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+  
+    
+
+  create  table
+    `data_study`.`customer_pending_rank__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- customer pending rank 
+with customer_total_pending as (
+select
+    uid as 'customerID',
+    sum(gmv) as 'total_pending',
+    dense_rank() over (order by sum(gmv) desc) as 'pending_rank'
+from `data_study`.`stg_transaction_data`
+group by customerID )
+-- customer category
+select 
+    customerID,
+    total_pending,
+    pending_rank,
+    
+    case 
+        when pending_rank <= max(pending_rank) over () / 3 then 'Gold'
+        when pending_rank >  max(pending_rank) over () / 3
+         and pending_rank <= max(pending_rank) over () * 2/3 then 'Silver'
+        when pending_rank >  max(pending_rank) over () * 2/3 then 'Bronze'
+        else null
+    end
+ as 'customer_category'
+from customer_total_pending
+    )
+
+  
+[0m15:20:38.562230 [debug] [Thread-1 (]: SQL status: SUCCESS 3093 in 0.0 seconds
+[0m15:20:38.565211 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.565643 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    drop table if exists `data_study`.`customer_pending_rank__dbt_backup` cascade
+  
+[0m15:20:38.567729 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.568676 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.569094 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    rename table `data_study`.`customer_pending_rank` to `data_study`.`customer_pending_rank__dbt_backup`
+  
+[0m15:20:38.576726 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.579389 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.579814 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    drop table if exists `data_study`.`customer_pending_rank` cascade
+  
+[0m15:20:38.581716 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.582746 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.583172 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+
+    rename table `data_study`.`customer_pending_rank__dbt_tmp` to `data_study`.`customer_pending_rank`
+  
+[0m15:20:38.590920 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.595451 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: COMMIT
+[0m15:20:38.595887 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.596295 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: COMMIT
+[0m15:20:38.596983 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.599353 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.customer_pending_rank"
+[0m15:20:38.599775 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.customer_pending_rank"} */
+drop table if exists `data_study`.`customer_pending_rank__dbt_backup`
+[0m15:20:38.606967 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.608446 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.customer_pending_rank (execute): 15:20:38.390977 => 15:20:38.608185
+[0m15:20:38.608881 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.customer_pending_rank: Close
+[0m15:20:38.609655 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c3d5570>]}
+[0m15:20:38.610251 [info ] [Thread-1 (]: 2 of 7 OK created sql table model data_study.customer_pending_rank ............. [[32mSUCCESS 3093[0m in 0.23s]
+[0m15:20:38.610902 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.customer_pending_rank
+[0m15:20:38.611386 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:20:38.611883 [info ] [Thread-1 (]: 3 of 7 START sql table model data_study.dim_shop_owner ......................... [RUN]
+[0m15:20:38.612546 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.customer_pending_rank, now model.customer_online_transactions_analytics.dim_shop_owner)
+[0m15:20:38.612959 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:20:38.615718 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.616601 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.dim_shop_owner (compile): 15:20:38.613217 => 15:20:38.616344
+[0m15:20:38.617100 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:20:38.620959 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.622078 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.623049 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: BEGIN
+[0m15:20:38.624405 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:38.635769 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.637593 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.638394 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+  
+    
+
+  create  table
+    `data_study`.`dim_shop_owner__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- dim table about shop and shop_owner
+select
+    shop_id,
+    shop_owner_uid
+from `data_study`.`stg_transaction_data`
+group by shop_id, shop_owner_uid
+    )
+
+  
+[0m15:20:38.672533 [debug] [Thread-1 (]: SQL status: SUCCESS 1385 in 0.0 seconds
+[0m15:20:38.675834 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.676313 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    drop table if exists `data_study`.`dim_shop_owner__dbt_backup` cascade
+  
+[0m15:20:38.678345 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.679458 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.679923 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    rename table `data_study`.`dim_shop_owner` to `data_study`.`dim_shop_owner__dbt_backup`
+  
+[0m15:20:38.687192 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.691441 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.691924 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    drop table if exists `data_study`.`dim_shop_owner` cascade
+  
+[0m15:20:38.693735 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.694819 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.695287 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+
+    rename table `data_study`.`dim_shop_owner__dbt_tmp` to `data_study`.`dim_shop_owner`
+  
+[0m15:20:38.702708 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.704787 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: COMMIT
+[0m15:20:38.705250 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.705685 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: COMMIT
+[0m15:20:38.706451 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.709021 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.dim_shop_owner"
+[0m15:20:38.709488 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.dim_shop_owner"} */
+drop table if exists `data_study`.`dim_shop_owner__dbt_backup`
+[0m15:20:38.717304 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.718818 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.dim_shop_owner (execute): 15:20:38.617356 => 15:20:38.718565
+[0m15:20:38.719290 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.dim_shop_owner: Close
+[0m15:20:38.720118 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c4cbb80>]}
+[0m15:20:38.720759 [info ] [Thread-1 (]: 3 of 7 OK created sql table model data_study.dim_shop_owner .................... [[32mSUCCESS 1385[0m in 0.11s]
+[0m15:20:38.721420 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.dim_shop_owner
+[0m15:20:38.721925 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:20:38.722451 [info ] [Thread-1 (]: 4 of 7 START sql table model data_study.sale_analysis_by_shop_daily ............ [RUN]
+[0m15:20:38.723160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.dim_shop_owner, now model.customer_online_transactions_analytics.sale_analysis_by_shop_daily)
+[0m15:20:38.723632 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:20:38.726485 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.727274 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.sale_analysis_by_shop_daily (compile): 15:20:38.723923 => 15:20:38.726991
+[0m15:20:38.727744 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:20:38.731938 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.732636 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.733095 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: BEGIN
+[0m15:20:38.733528 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:38.742585 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.743973 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.744528 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+  
+    
+
+  create  table
+    `data_study`.`sale_analysis_by_shop_daily__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- transform data, keep customer transaction data, eliminate other cases such as: adjust bad debt, customerID is blank
+select
+    txn_date as 'transaction_date',
+    shop_id,
+    shop_owner_uid,
+    count(order_id) as 'total_order',
+    sum(gmv) as 'total_gmv',
+    sum(case when rebate > 0 then 1 else 0 end) as 'rebate_count',
+    sum(rebate) as 'total_rebate'
+from `data_study`.`stg_transaction_data`
+group by txn_date, shop_id, shop_owner_uid
+    )
+
+  
+[0m15:20:38.797417 [debug] [Thread-1 (]: SQL status: SUCCESS 2289 in 0.0 seconds
+[0m15:20:38.800896 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.801396 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    drop table if exists `data_study`.`sale_analysis_by_shop_daily__dbt_backup` cascade
+  
+[0m15:20:38.804044 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.805180 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.805768 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    rename table `data_study`.`sale_analysis_by_shop_daily` to `data_study`.`sale_analysis_by_shop_daily__dbt_backup`
+  
+[0m15:20:38.814973 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.818951 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.819678 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    drop table if exists `data_study`.`sale_analysis_by_shop_daily` cascade
+  
+[0m15:20:38.822580 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.824490 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.825296 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+
+    rename table `data_study`.`sale_analysis_by_shop_daily__dbt_tmp` to `data_study`.`sale_analysis_by_shop_daily`
+  
+[0m15:20:38.834841 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.838810 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: COMMIT
+[0m15:20:38.839897 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.840920 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: COMMIT
+[0m15:20:38.842411 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.847941 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"
+[0m15:20:38.849007 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.sale_analysis_by_shop_daily"} */
+drop table if exists `data_study`.`sale_analysis_by_shop_daily__dbt_backup`
+[0m15:20:38.860256 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.863456 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.sale_analysis_by_shop_daily (execute): 15:20:38.728036 => 15:20:38.862903
+[0m15:20:38.864516 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.sale_analysis_by_shop_daily: Close
+[0m15:20:38.866233 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c3e9990>]}
+[0m15:20:38.867629 [info ] [Thread-1 (]: 4 of 7 OK created sql table model data_study.sale_analysis_by_shop_daily ....... [[32mSUCCESS 2289[0m in 0.14s]
+[0m15:20:38.869119 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.sale_analysis_by_shop_daily
+[0m15:20:38.870246 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:20:38.871455 [info ] [Thread-1 (]: 5 of 7 START sql table model data_study.suspected_fraud_customers .............. [RUN]
+[0m15:20:38.873034 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.sale_analysis_by_shop_daily, now model.customer_online_transactions_analytics.suspected_fraud_customers)
+[0m15:20:38.874060 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:20:38.880870 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.882308 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_customers (compile): 15:20:38.874736 => 15:20:38.881821
+[0m15:20:38.883167 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:20:38.898845 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.901286 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.901989 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: BEGIN
+[0m15:20:38.902518 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:38.913939 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.915536 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.916281 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+  
+    
+
+  create  table
+    `data_study`.`suspected_fraud_customers__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- suspected fraud customers is defined: buying under-1000 orders, use more than 1 voucher per day
+with define_under_1000_fraud as (
+select 
+    txn_date,
+    uid as 'customer_id',
+    'have_orders_under_1000' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where gmv < 1000
+group by txn_date, uid
+)
+, define_more_than_1_voucher_fraud as (
+select
+    txn_date,
+    uid as 'customer_id',
+    'use_more_than_1_voucher_per_day' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where rebate > 0
+group by txn_date, uid
+having count(rebate) > 1
+)
+-- main (sum up fraud)
+(select * from define_under_1000_fraud)
+union all
+(select * from define_more_than_1_voucher_fraud)
+    )
+
+  
+[0m15:20:38.943274 [debug] [Thread-1 (]: SQL status: SUCCESS 292 in 0.0 seconds
+[0m15:20:38.946253 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.946667 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    drop table if exists `data_study`.`suspected_fraud_customers__dbt_backup` cascade
+  
+[0m15:20:38.948766 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.949691 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.950096 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    rename table `data_study`.`suspected_fraud_customers` to `data_study`.`suspected_fraud_customers__dbt_backup`
+  
+[0m15:20:38.957364 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.960123 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.960620 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    drop table if exists `data_study`.`suspected_fraud_customers` cascade
+  
+[0m15:20:38.962528 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.963499 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.963913 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+
+    rename table `data_study`.`suspected_fraud_customers__dbt_tmp` to `data_study`.`suspected_fraud_customers`
+  
+[0m15:20:38.971095 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.972767 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: COMMIT
+[0m15:20:38.973172 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.973557 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: COMMIT
+[0m15:20:38.974250 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.976553 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_customers"
+[0m15:20:38.976962 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_customers"} */
+drop table if exists `data_study`.`suspected_fraud_customers__dbt_backup`
+[0m15:20:38.983362 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:38.984715 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_customers (execute): 15:20:38.883773 => 15:20:38.984489
+[0m15:20:38.985130 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_customers: Close
+[0m15:20:38.985879 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c3994b0>]}
+[0m15:20:38.986459 [info ] [Thread-1 (]: 5 of 7 OK created sql table model data_study.suspected_fraud_customers ......... [[32mSUCCESS 292[0m in 0.11s]
+[0m15:20:38.987063 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.suspected_fraud_customers
+[0m15:20:38.987566 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:20:38.988091 [info ] [Thread-1 (]: 6 of 7 START sql table model data_study.suspected_fraud_shop ................... [RUN]
+[0m15:20:38.988742 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.suspected_fraud_customers, now model.customer_online_transactions_analytics.suspected_fraud_shop)
+[0m15:20:38.989160 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:20:38.991860 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:38.992622 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_shop (compile): 15:20:38.989421 => 15:20:38.992368
+[0m15:20:38.993044 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:20:38.996884 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:38.997723 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:38.998751 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: BEGIN
+[0m15:20:38.999634 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:39.010566 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.012201 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.012940 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+  
+    
+
+  create  table
+    `data_study`.`suspected_fraud_shop__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- suspected fraud shop is defined: having under-1000 orders (fake orders hay order boosting)
+select 
+    txn_date,
+    shop_owner_uid,
+    shop_id,
+    'order_boosting' as 'fraud_note'
+from `data_study`.`stg_transaction_data`
+where gmv < 1000
+group by txn_date, shop_owner_uid,shop_id
+    )
+
+  
+[0m15:20:39.038440 [debug] [Thread-1 (]: SQL status: SUCCESS 101 in 0.0 seconds
+[0m15:20:39.044436 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.044926 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    drop table if exists `data_study`.`suspected_fraud_shop__dbt_backup` cascade
+  
+[0m15:20:39.047080 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.048192 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.048647 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    rename table `data_study`.`suspected_fraud_shop` to `data_study`.`suspected_fraud_shop__dbt_backup`
+  
+[0m15:20:39.057184 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.060278 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.060754 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    drop table if exists `data_study`.`suspected_fraud_shop` cascade
+  
+[0m15:20:39.062580 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.063624 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.064082 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+
+    rename table `data_study`.`suspected_fraud_shop__dbt_tmp` to `data_study`.`suspected_fraud_shop`
+  
+[0m15:20:39.072120 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.083722 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: COMMIT
+[0m15:20:39.085525 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.087241 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: COMMIT
+[0m15:20:39.089847 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.096198 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.suspected_fraud_shop"
+[0m15:20:39.097158 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.suspected_fraud_shop"} */
+drop table if exists `data_study`.`suspected_fraud_shop__dbt_backup`
+[0m15:20:39.106901 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.109414 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.suspected_fraud_shop (execute): 15:20:38.993302 => 15:20:39.108984
+[0m15:20:39.110220 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.suspected_fraud_shop: Close
+[0m15:20:39.111600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8d12cbb0>]}
+[0m15:20:39.112674 [info ] [Thread-1 (]: 6 of 7 OK created sql table model data_study.suspected_fraud_shop .............. [[32mSUCCESS 101[0m in 0.12s]
+[0m15:20:39.113814 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.suspected_fraud_shop
+[0m15:20:39.114678 [debug] [Thread-1 (]: Began running node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:20:39.115551 [info ] [Thread-1 (]: 7 of 7 START sql table model data_study.shop_selling_rank ...................... [RUN]
+[0m15:20:39.116545 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_online_transactions_analytics.suspected_fraud_shop, now model.customer_online_transactions_analytics.shop_selling_rank)
+[0m15:20:39.117203 [debug] [Thread-1 (]: Began compiling node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:20:39.121640 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.122763 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.shop_selling_rank (compile): 15:20:39.117613 => 15:20:39.122393
+[0m15:20:39.123358 [debug] [Thread-1 (]: Began executing node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:20:39.132857 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.134967 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.135680 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: BEGIN
+[0m15:20:39.136173 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:20:39.147135 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.148001 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.148665 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+  
+    
+
+  create  table
+    `data_study`.`shop_selling_rank__dbt_tmp`
+    
+    
+      as
+    
+    (
+      
+
+-- rank shop according the number of sold quantity, the gmv total
+with shop_rank as (
+select
+    shop_id,
+    shop_owner_uid,
+    sum(total_order) as 'total_order',
+    dense_rank() over (order by sum(total_order) DESC) as 'orders_rank',
+    sum(total_gmv) as 'total_gmv',
+    dense_rank() over (order by sum(total_gmv) DESC) as 'gmv_rank'
+
+from `data_study`.`sale_analysis_by_shop_daily`
+group by shop_id, shop_owner_uid)
+
+-- shop catogory
+select *,
+    
+    case 
+        when gmv_rank <= max(gmv_rank) over () / 3 then 'Gold'
+        when gmv_rank >  max(gmv_rank) over () / 3
+         and gmv_rank <= max(gmv_rank) over () * 2/3 then 'Silver'
+        when gmv_rank >  max(gmv_rank) over () * 2/3 then 'Bronze'
+        else null
+    end
+ as 'shop_category'
+from shop_rank
+    )
+
+  
+[0m15:20:39.198008 [debug] [Thread-1 (]: SQL status: SUCCESS 1385 in 0.0 seconds
+[0m15:20:39.201392 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.201892 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    drop table if exists `data_study`.`shop_selling_rank__dbt_backup` cascade
+  
+[0m15:20:39.204246 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.205381 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.205833 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    rename table `data_study`.`shop_selling_rank` to `data_study`.`shop_selling_rank__dbt_backup`
+  
+[0m15:20:39.213942 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.216781 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.217242 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    drop table if exists `data_study`.`shop_selling_rank` cascade
+  
+[0m15:20:39.218997 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.220019 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.220471 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+
+    rename table `data_study`.`shop_selling_rank__dbt_tmp` to `data_study`.`shop_selling_rank`
+  
+[0m15:20:39.228860 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.230700 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: COMMIT
+[0m15:20:39.231156 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.231601 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: COMMIT
+[0m15:20:39.232329 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.234931 [debug] [Thread-1 (]: Using mysql connection "model.customer_online_transactions_analytics.shop_selling_rank"
+[0m15:20:39.235394 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: /* {"app": "dbt", "dbt_version": "1.7.13", "profile_name": "customer_online_transactions_analytics", "target_name": "dev", "node_id": "model.customer_online_transactions_analytics.shop_selling_rank"} */
+drop table if exists `data_study`.`shop_selling_rank__dbt_backup`
+[0m15:20:39.242701 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.244201 [debug] [Thread-1 (]: Timing info for model.customer_online_transactions_analytics.shop_selling_rank (execute): 15:20:39.123723 => 15:20:39.243946
+[0m15:20:39.244657 [debug] [Thread-1 (]: On model.customer_online_transactions_analytics.shop_selling_rank: Close
+[0m15:20:39.245478 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '280baffd-9ae4-4936-8999-2dbcdc3d7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c3f0a30>]}
+[0m15:20:39.246128 [info ] [Thread-1 (]: 7 of 7 OK created sql table model data_study.shop_selling_rank ................. [[32mSUCCESS 1385[0m in 0.13s]
+[0m15:20:39.246795 [debug] [Thread-1 (]: Finished running node model.customer_online_transactions_analytics.shop_selling_rank
+[0m15:20:39.248087 [debug] [MainThread]: Using mysql connection "master"
+[0m15:20:39.248506 [debug] [MainThread]: On master: BEGIN
+[0m15:20:39.248905 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:20:39.254788 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.255318 [debug] [MainThread]: On master: COMMIT
+[0m15:20:39.255757 [debug] [MainThread]: Using mysql connection "master"
+[0m15:20:39.256193 [debug] [MainThread]: On master: COMMIT
+[0m15:20:39.257421 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:20:39.258434 [debug] [MainThread]: On master: Close
+[0m15:20:39.261002 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:20:39.262126 [debug] [MainThread]: Connection 'model.customer_online_transactions_analytics.shop_selling_rank' was properly closed.
+[0m15:20:39.262925 [info ] [MainThread]: 
+[0m15:20:39.263546 [info ] [MainThread]: Finished running 1 view model, 6 table models in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m15:20:39.266055 [debug] [MainThread]: Command end result
+[0m15:20:39.298975 [info ] [MainThread]: 
+[0m15:20:39.300912 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:20:39.301582 [info ] [MainThread]: 
+[0m15:20:39.302386 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m15:20:39.304884 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6087466, "process_user_time": 2.742865, "process_kernel_time": 0.083599, "process_mem_max_rss": "114772", "process_in_blocks": "24248", "process_out_blocks": "1904"}
+[0m15:20:39.306324 [debug] [MainThread]: Command `dbt run` succeeded at 15:20:39.305967 after 1.61 seconds
+[0m15:20:39.307001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8fd2e1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c495e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8c497460>]}
+[0m15:20:39.308398 [debug] [MainThread]: Flushing usage events
