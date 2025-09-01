@@ -1,4 +1,4 @@
-# Customer Transaction Analytics Platform
+# Customer Transaction Analytics Data Pipeline
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) 
 ![DBT](https://img.shields.io/badge/DBT-1.7-orange?logo=dbt) 
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql) 
@@ -6,7 +6,7 @@
 ![Postman](https://img.shields.io/badge/Postman-Tool-orange?logo=postman) 
 ![Docker](https://img.shields.io/badge/Docker-28-blue?logo=docker) 
 
-A data analytics platform for e-commerce transactions, built with **DBT**, **MySQL**, and **FastAPI** to transform raw campaign data into business insights and fraud detection reports, and containerized with **Docker** for consistent deployment across environments.
+A data pipeline for e-commerce transactions, built with **Python**, **DBT**, **MySQL**, **FastAPI**, and **Docker** to transform raw campaign data into business insights and fraud detection reports.
 ## Introduction of the Project and Overview of the Implementation Steps
 ### 📌 Introduction:
 This project is a Customer Transaction Analytics Platform designed to process and analyze e-commerce campaign data. The system transforms raw transaction logs into structured insights, such as customer spending, shop performance, and fraud detection. It also provides APIs for different stakeholders (customers, shop owners, and the marketing team) to access business metrics in real time.
