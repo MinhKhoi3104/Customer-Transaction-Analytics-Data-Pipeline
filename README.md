@@ -56,7 +56,7 @@ cd ~/.dbt/ && code .
 
 ![update-dbt-profile](./image/update-dbt-profile.png)
 
-- Return to the original terminal and run the following commands:
+5. Return to the original terminal and run the following commands:
 ```bash
 cd customer_online_transactions_analytics ### Navigate to the folder where dbt is running.
 dbt run
@@ -67,7 +67,7 @@ dbt run
 
 ![new-tbl](./image/new-tbl.png)
 
-- Continue by running the commands to open the DBT docs, where you can review the logic used to create the tables.
+6. Continue by running the commands to open the DBT docs, where you can review the logic used to create the tables.
 ```bash
 dbt docs generate;
 dbt docs serve;
@@ -76,7 +76,7 @@ dbt docs serve;
 
 ![lineage-graph](./image/lineage-graph.png)
 
-- Next, run the commands to start FastAPI. You can open a separate terminal to enter the command or click "Ctrl + C" to continue this terminal. However, If you countinue to use this terminal, you must enter the command "cd .." before entering the below command
+7. Next, run the commands to start FastAPI. You can open a separate terminal to enter the command or click "Ctrl + C" to continue this terminal. However, If you countinue to use this terminal, you must enter the command "cd .." before entering the below command
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
