@@ -1,8 +1,8 @@
 # Customer Transaction Analytics Data Pipeline
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) 
-![DBT](https://img.shields.io/badge/DBT-1.7-orange?logo=dbt) 
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql) 
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi) 
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![dbt](https://img.shields.io/badge/dbt-1.7-orange)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi)
 ![Postman](https://img.shields.io/badge/Postman-Tool-orange?logo=postman) 
 ![Docker](https://img.shields.io/badge/Docker-28-blue?logo=docker) 
 
@@ -48,13 +48,18 @@ conda activate demo-01
 ```bash
 pip install -r requirements.txt
 ```
-4. Open a new terminal, update the dbt profile configuration, and then run the following commands:
+4. Open a new terminal, set the dbt profile configuration, and then run the following commands:
 ```bash
+### Manually create the .dbt directory if it doesn’t exist, or append the profiles.yml content if it already does.
+mkdir -p ~/.dbt
+### Add profiles.yml (Update the file path accordingly)
+cp /home/minhkhoi/khoidata/Github/Customer-Transaction-Analytics-Data-Pipeline/profiles.yml ~/.dbt/
+```
+
+```bash
+### Verify using the command
 cd ~/.dbt/ && code .
 ```
-- Modify the file as follows:
-
-![update-dbt-profile](./image/update-dbt-profile.png)
 
 5. Return to the original terminal and run the following commands:
 ```bash
