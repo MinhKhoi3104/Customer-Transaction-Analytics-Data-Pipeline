@@ -8,6 +8,8 @@ COPY ./customer_online_transactions_analytics /transactions_analytics/customer_o
 COPY ./main.py /transactions_analytics
 COPY ./logger.py /transactions_analytics
 COPY ./requirements.txt /transactions_analytics
+COPY ./mysql_connection.py /transactions_analytics
+COPY ./api_authentication.py /transactions_analytics
 
 EXPOSE 30005
 
