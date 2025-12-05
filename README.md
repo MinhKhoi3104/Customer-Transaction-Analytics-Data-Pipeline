@@ -71,7 +71,7 @@ create database data_mart;
 5. Open a new terminal, set the dbt profile configuration, and then run the following commands:
 ```bash
 # Manually create the .dbt directory and set up profile.yml file
-mkdir -p ~/.dbt
+mkdir -p ~/.dbt;
 # open folder dbt
 cd ~/.dbt/ && code .
 ```
