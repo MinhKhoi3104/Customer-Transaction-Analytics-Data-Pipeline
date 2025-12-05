@@ -18,6 +18,7 @@ The dataset was collected from a discount campaign on an e-commerce platform, co
 After gathering the campaign transaction data, the following steps were implemented:
 
 ### ⚙️ Overview of the Implementation Steps:
+- Built MySQL database by using docker-compose.
 - Used **DBT (Data Build Tool)** to process and transform data from the raw transaction table (tbl transaction_data):
     - Transformed into a table storing shop and shop owner information (**tbl dim_shop_owner**).
     - Transformed into a table storing customer information such as total spending, ranking, and classification (Gold, Silver, Bronze) (**tbl customer_pending_rank**).
@@ -34,34 +35,72 @@ After gathering the campaign transaction data, the following steps were implemen
   
 ## Detailed Project Demo Guide
 
-1. First, clone this repository from GitHub to your local machine. Then, set up a MySQL database (version 8.0) running on localhost:3306. Next, create a database named data_study and import the transaction_data.csv file from the data_sample folder into it.
-
-![importdata](./image/importdata.png)
-
-2. Next, create a new virtual environment to prepare for the demo. Note that the demo will be conducted on an ***Ubuntu environment using Anaconda***. If you are working on a different operating system or environment, please adapt the commands accordingly.
-
+1. First, clone this repository from GitHub to your local machine. Next, create a new virtual environment to prepare for the demo. Note that the demo will be conducted on an ***Using Anaconda***. If you are working on a different operating system or environment, please please skip this step. 
 ```bash
+# create evironment
 conda create --name demo-01 python=3.10 -y
 conda activate demo-01
 ```
-3. Then, import the required libraries.
+
+2. Then, import the required libraries.
 ```bash
+# import lib
 pip install -r requirements.txt
 ```
-4. Open a new terminal, set the dbt profile configuration, and then run the following commands:
+
+3. Then, run docker-compose file to set up a MySQL database (version 8.0). Next, run the file import_raw_data.py to prepare raw data for demo (use DBeaver to check the inserted data)
 ```bash
-### Manually create the .dbt directory if it doesn’t exist, or append the profiles.yml content if it already does.
-mkdir -p ~/.dbt
-### Add profiles.yml (Update the file path accordingly)
-cp /home/minhkhoi/khoidata/Github/Customer-Transaction-Analytics-Data-Pipeline/profiles.yml ~/.dbt/
+# Run docker-compose file on terminal
+docker-compose -f docker_compose.yml up -d
+
+# Run file insert raw data to MySQL 
+python import_raw_data.py
 ```
 
+4. Connect to Mysql database by using DBeaver tools (connection information is in _00101_database_config.py file). Then, run code SQL to create schema data_mart (pass: 123)
+
 ```bash
-### Verify using the command
+# Code create schema data_mart
+create database data_mart;
+```
+![mysql_connection](./image/mysql_connection.png)
+
+5. Open a new terminal, set the dbt profile configuration, and then run the following commands:
+```bash
+# Manually create the .dbt directory and set up profile.yml file
+mkdir -p ~/.dbt
+# open folder dbt
 cd ~/.dbt/ && code .
 ```
 
-5. Return to the original terminal and run the following commands:
+```bash
+# create profile.yml and add this content into profile.yml
+customer_online_transactions_analytics:
+  outputs:
+    dev:
+      type: mysql
+      server: localhost 
+      port: 3307
+      schema: data_mart  
+      database: data_mart 
+      username: root
+      password: "123"
+      driver: MySQL ODBC 8.0 ANSI Driver
+
+    prod:
+      type: mysql
+      server: localhost
+      port: 3307
+      schema: data_mart
+      database: data_mart
+      username: root
+      password: "123"
+      driver: MySQL ODBC 8.0 ANSI Driver
+
+  target: dev
+```
+
+6. Return to the original terminal and run the following commands:
 ```bash
 cd customer_online_transactions_analytics ### Navigate to the folder where dbt is running.
 dbt run
@@ -70,9 +109,9 @@ dbt run
 
 ![dbt-success](./image/dbt-success.png)
 
-![new-tbl](./image/new-tbl.png)
+![dbt_run_success](./image/dbt_run_success.png)
 
-6. Continue by running the commands to open the DBT docs, where you can review the logic used to create the tables.
+7. Continue by running the commands to open the DBT docs, where you can review the logic used to create the tables (http://localhost:8080)
 ```bash
 dbt docs generate;
 dbt docs serve;
@@ -81,7 +120,7 @@ dbt docs serve;
 
 ![lineage-graph](./image/lineage-graph.png)
 
-7. Next, run the commands to start FastAPI. You can open a separate terminal to enter the command or click "Ctrl + C" to continue this terminal. However, If you countinue to use this terminal, you must enter the command "cd .." before entering the below command
+8. Next, run the commands to start FastAPI. You can open a separate terminal to enter the command or click "Ctrl + C" to continue this terminal. However, If you countinue to use this terminal, you must enter the command "cd .." before entering the below command
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```

@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  mysql_db:
+    # Sử dụng image MySQL phiên bản 8.0
+    image: mysql:8.0
+    container_name: customer_transaction_analytics
+    
+    # Thiết lập biến môi trường
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: ecom_transaction
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+  # -----------------------------------------------------------
+  # # Dịch vụ 2: FastAPI Application
+  # # -----------------------------------------------------------
+  # fastapi_app:
+  #   # Build Image từ Dockerfile trong thư mục hiện tại
+  #   build: . 
+  #   container_name: customer_transaction_analytics_api
+  #   ports:
+  #     - "30006:30006"
+  #   environment:
+  #     # Kết nối bằng tên dịch vụ
+  #     DB_HOST: mysql_db 
+  #     # Cổng nội bộ MySQL
+  #     DB_PORT: 3306 
+  #     DB_USER: admin
+  #     DB_PASSWORD: "123"
+  #     DB_DATABASE: ecom_transaction
+  #   depends_on:
+  #     - mysql_db # Đảm bảo DB khởi động trước API
+  #   restart: on-failure
+
+# Định nghĩa volume để lưu trữ dữ liệu
+volumes:
+  mysql_data:

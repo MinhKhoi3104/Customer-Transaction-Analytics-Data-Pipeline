@@ -1,19 +1,15 @@
 FROM python:3.10
 
 ### Create working directory
-WORKDIR /transactions_analytics
+WORKDIR /transactions_analytics_01
 
 ### Copy files
-COPY ./customer_online_transactions_analytics /transactions_analytics/customer_online_transactions_analytics
-COPY ./main.py /transactions_analytics
-COPY ./logger.py /transactions_analytics
-COPY ./requirements.txt /transactions_analytics
-COPY ./mysql_connection.py /transactions_analytics
-COPY ./api_authentication.py /transactions_analytics
+COPY . /transactions_analytics_01/
 
-EXPOSE 30005
+
+EXPOSE 30006
 
 # Install dependencies
 RUN pip install -r requirements.txt
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "30005"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "30006"]

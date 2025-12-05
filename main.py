@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
-from mysql_connection import get_db_connection
-from api_authentication import verify_credentials
+from _001_config._00101_database_config import get_db_connection
+from _002_utils.api_authentication import verify_credentials
 
 app = FastAPI()
 
@@ -16,7 +16,7 @@ def campaign_summary(user: str = Depends(verify_credentials)):
            sum(gmv) as total_gmv, 
            sum(case when rebate > 0 then 1 else 0 end) as total_rebate_vouchers,
            sum(rebate) as total_rebate_values 
-    from transaction_data
+    from ecom_transaction.transaction_data
     """
     cursor.execute(query)
     rows = cursor.fetchall()   # return all results
@@ -31,7 +31,7 @@ def read_customers_ranking(customer_id: int):
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    query = "SELECT * FROM customer_pending_rank WHERE customerID = %s"
+    query = "SELECT * FROM data_mart.customer_pending_rank WHERE customerID = %s"
     cursor.execute(query, (customer_id,))
     rows = cursor.fetchall()   # return all results
 
@@ -49,7 +49,7 @@ def read_shops_ranking(shop_id: int):
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    query = "SELECT * FROM shop_selling_rank WHERE shop_id = %s"
+    query = "SELECT * FROM data_mart.shop_selling_rank WHERE shop_id = %s"
     cursor.execute(query, (shop_id,))
     rows = cursor.fetchall()   # return all results
 
@@ -67,7 +67,7 @@ def read_fraud_customer(customer_id: int):
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    query = "SELECT * FROM suspected_fraud_customers WHERE customer_id = %s"
+    query = "SELECT * FROM data_mart.suspected_fraud_customers WHERE customer_id = %s"
     cursor.execute(query, (customer_id,))
     rows = cursor.fetchall()   # return all results
 
@@ -85,7 +85,7 @@ def read_fraud_shop(shop_id: int):
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    query = "SELECT * FROM suspected_fraud_shop WHERE shop_id = %s"
+    query = "SELECT * FROM data_mart.suspected_fraud_shop WHERE shop_id = %s"
     cursor.execute(query, (shop_id,))
     rows = cursor.fetchall()   # return all results
 

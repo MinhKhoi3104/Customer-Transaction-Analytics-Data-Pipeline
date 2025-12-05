@@ -1,6 +1,6 @@
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from logger import logger
+from _002_utils.logger import logger
 
 security = HTTPBasic()
 

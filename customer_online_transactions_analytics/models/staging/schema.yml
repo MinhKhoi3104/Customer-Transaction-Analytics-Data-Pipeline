@@ -3,7 +3,8 @@ version: 2
 sources:
   - name: main
     description: Raw customer online transaction data
-    schema: data_study
+    schema: ecom_transaction
+    database: ecom_transaction
     tables:
       - name: transaction_data
         description: "Log information about the customer transaction: number, quantity, price, used's voucher"
@@ -28,7 +29,7 @@ models:
           - not_null
       - name: order_id 
         description: Primary key
-        test: 
+        tests: 
           - unique
           - not_null
       - name: uid
