@@ -65,6 +65,9 @@ create database data_mart;
 ```
 ![mysql_connection](./image/mysql_connection.png)
 
+ **Note: while you are connecting MySQL by using DBeaver, Set up allowPublicKeyRetrieval = TRUE in "Driver properties"**
+![dbeaver_driver_properties](./image/dbeaver_driver_properties.png)
+
 5. Open a new terminal, set the dbt profile configuration, and then run the following commands:
 ```bash
 # Manually create the .dbt directory and set up profile.yml file
