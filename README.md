@@ -129,7 +129,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 ![api-success](./image/api-success.png)
 
-- Copy the URL and paste it into your browser, then append /docs (e.g., http://0.0.0.0:8000/docs).
+- Copy the URL (http://localhost:8000/docs) and paste it into your browser.
 
 ![api-docs](./image/api-docs.png)
 
