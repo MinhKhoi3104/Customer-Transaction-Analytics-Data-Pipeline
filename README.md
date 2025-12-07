@@ -149,7 +149,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ![api-log-access](./image/api-log-access.png)
 
-- Additionally, we can use Postman as an alternative to accessing the link http://0.0.0.0:8000/docs
+- Additionally, we can use Postman as an alternative to accessing the link http://localhost:8000/docs
 
 ![postman](./image/postman.png)
 
