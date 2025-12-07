@@ -38,7 +38,7 @@ After gathering the campaign transaction data, the following steps were implemen
 1. First, clone this repository from GitHub to your local machine. Next, create a new virtual environment to prepare for the demo. Note that the demo will be conducted on an ***Using Anaconda***. If you are working on a different operating system or environment, please please skip this step. 
 ```bash
 # create evironment
-conda create --name demo-01 python=3.10 -y
+conda create --name demo-01 python=3.10 -y ;
 conda activate demo-01
 ```
 
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 3. Then, run docker-compose file to set up a MySQL database (version 8.0). Next, run the file import_raw_data.py to prepare raw data for demo (use DBeaver to check the inserted data)
 ```bash
 # Run docker-compose file on terminal
-docker-compose -f docker_compose.yml up -d
+docker-compose -f docker_compose.yml up -d ;
 
 # Run file insert raw data to MySQL 
 python import_raw_data.py
@@ -105,7 +105,7 @@ customer_online_transactions_analytics:
 
 6. Return to the original terminal and run the following commands:
 ```bash
-cd customer_online_transactions_analytics ### Navigate to the folder where dbt is running.
+cd customer_online_transactions_analytics ; ### Navigate to the folder where dbt is running.
 dbt run
 ```
 - If the output matches the example image, the execution was successful and you will see the newly created tables in MySQL.
