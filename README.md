@@ -1,4 +1,4 @@
-# Customer Transaction Analytics Data Pipeline
+# E-Commerce Transaction Analytics Pipeline
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
 ![dbt](https://img.shields.io/badge/dbt-1.7-orange)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql)
