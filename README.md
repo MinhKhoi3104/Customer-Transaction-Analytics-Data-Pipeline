@@ -32,7 +32,79 @@ After gathering the campaign transaction data, the following steps were implemen
     - For Marcom staff: 
         - Log in with authorized credentials (username: admin, password: admin) to view campaign-level metrics such as total orders, GMV, number of vouchers used, as well as detailed customer/shop information similar to other users.
 - Used **Docker** to containerize the API, ensuring stable and consistent deployment across environments while simplifying setup and scalability.
-  
+
+## Project Structure
+
+```
+E-Commerce-Transaction-Analytics-Pipeline/
+│
+├── _001_config/                          # Configuration files
+│   └── _00101_database_config.py         # MySQL database connection configuration
+│
+├── _002_utils/                           # Utility modules
+│   ├── api_authentication.py             # API authentication and authorization logic
+│   └── logger.py                         # Logging utility for API access tracking
+│
+├── customer_online_transactions_analytics/ # DBT project directory
+│   ├── dbt_project.yml                   # DBT project configuration
+│   │
+│   ├── models/                           # DBT models (SQL transformations)
+│   │   ├── staging/                      # Staging layer models
+│   │   │   ├── stg_transaction_data.sql  # Staging model for raw transaction data
+│   │   │   └── schema.yml                # Schema definitions and tests for staging models
+│   │   │
+│   │   └── marts/                        # Marts layer models (final business tables)
+│   │       ├── dim_shop_owner.sql        # Dimension table: shop and shop owner information
+│   │       ├── customer_pending_rank.sql # Customer ranking and classification (Gold/Silver/Bronze)
+│   │       ├── shop_selling_rank.sql     # Shop ranking and classification (Gold/Silver/Bronze)
+│   │       ├── sale_analysis_by_shop_daily.sql # Daily sales analysis by shop
+│   │       ├── suspected_fraud_customers.sql   # Fraud detection: suspicious customers
+│   │       ├── suspected_fraud_shop.sql         # Fraud detection: suspicious shops
+│   │       └── schema.yml                # Schema definitions and tests for marts models
+│   │
+│   ├── macros/                           # DBT macros (reusable SQL functions)
+│   │   ├── positive_quantity.sql         # Macro to validate positive quantities
+│   │   └── rank_category.sql             # Macro for ranking and categorization logic
+│   │
+│   ├── analyses/                         # Ad-hoc analysis queries
+│   ├── seeds/                            # Seed data files (CSV)
+│   ├── snapshots/                        # DBT snapshots for historical tracking
+│   ├── tests/                            # Custom DBT tests
+│   ├── target/                           # DBT compilation artifacts (generated)
+│   └── logs/                             # DBT execution logs
+│
+├── data_sample/                          # Sample data files
+│   └── transaction_data.csv              # Raw transaction data sample
+│
+├── image/                                # Documentation images
+│   ├── overview.png                      # Project overview diagram
+│   ├── api-docs.png                      # API documentation screenshot
+│   └── ...                               # Other demo and documentation images
+│
+├── logs/                                 # Application logs
+│   └── o_transaction_analytics_api.log   # API access and authentication logs
+│
+├── main.py                               # FastAPI application entry point
+├── import_raw_data.py                    # Script to import raw data into MySQL
+├── requirements.txt                      # Python dependencies
+├── docker_compose.yml                    # Docker Compose configuration for MySQL
+├── Dockerfile                            # Docker configuration for API containerization
+└── README.md                             # Project documentation
+```
+
+### Key Components:
+
+- **`_001_config/`**: Contains database connection settings and configuration files
+- **`_002_utils/`**: Utility modules for authentication, logging, and helper functions
+- **`customer_online_transactions_analytics/`**: DBT project with data transformation models
+  - **`models/staging/`**: Raw data cleaning and standardization
+  - **`models/marts/`**: Business-ready analytical tables
+  - **`macros/`**: Reusable SQL macros for common transformations
+- **`main.py`**: FastAPI application with endpoints for different user roles
+- **`import_raw_data.py`**: Data ingestion script for initial data loading
+- **`docker_compose.yml`**: MySQL database container setup
+- **`Dockerfile`**: API containerization configuration
+
 ## Detailed Project Demo Guide
 
 1. First, clone this repository from GitHub to your local machine. Next, create a new virtual environment to prepare for the demo. Note that the demo will be conducted on an ***Using Anaconda***. If you are working on a different operating system or environment, please please skip this step. 
@@ -153,4 +225,4 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ![postman](./image/postman.png)
 
-## ***Author: Nguyen Minh Khoi***
+### ***Author: Nguyen Minh Khoi***
